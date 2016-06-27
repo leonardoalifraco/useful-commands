@@ -7,3 +7,13 @@ Remove containers that have not been used since weeks ago (change to x days ago 
 ```
 docker rm $(docker ps -a | grep 'weeks ago' | awk '{print $1}')
 ```
+
+List volumes
+````
+docker volumes ls
+````
+
+Remove volume
+````
+docker volume rm [VOLUME-ID]
+```
