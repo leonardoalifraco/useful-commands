@@ -10,7 +10,7 @@ docker rm $(docker ps -a | grep 'weeks ago' | awk '{print $1}')
 
 List volumes
 ````
-docker volumes ls
+docker volume ls
 ````
 
 Remove volume
